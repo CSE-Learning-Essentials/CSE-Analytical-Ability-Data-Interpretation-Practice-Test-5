@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Civil Service Exam Practice Test</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+.container {
+    background: #fff;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+h1 {
+    text-align: center;
+}
+.question {
+    margin-bottom: 20px;
+}
+.answers {
+    list-style: none;
+    padding-left: 0;
+}
+.answers li {
+    margin-bottom: 5px;
+}
+.feedback {
+    font-weight: bold;
+    margin-top: 5px;
+}
+.correct {
+    color: green;
+}
+.incorrect {
+    color: red;
+}
+.solution {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #333;
+}
+.score-section {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background: #45a049;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1>Civil Service Exam Practice Test</h1>
+<p><strong>Created by:</strong> CSE Learning Essentials</p>
+<p><strong>Section 2: Analytical Ability</strong></p>
+<p><strong>Part 6: Data Interpretation</strong></p>
+<p><strong>Practice Test</strong></p>
+<p><strong>Passing Score:</strong> 4</p>
+
+<p><strong>Directions:</strong> Study the given pie graph carefully and answer the questions given below.</p>
+
+<p><strong>Problem:</strong> The production manager of Orion Electronics Factory reported that in June 2025 the factory produced a total of 50,000 units of electronic devices. The production was distributed as follows:</p>
+
+<!-- Insert pie chart image here -->
+        <img src="https://raw.githubusercontent.com/CSE-Learning-Essentials/CSE-Analytical-Ability-Data-Interpretation-Practice-Test-5/main/image/image5.jpg" alt="Pie Chart" width="100%">
+
+<p>The production manager of Orion Electronics Factory reported that in June 2025 the factory produced a total of 50,000 units of electronic devices. The production was distributed as shown above.</p>
+<p>The manager also noted that 5% of smartphones and 3% of laptops produced failed quality inspection and were rejected.</p>
+
+<form id="quiz-form">
+    <div class="question">
+        <p>1. How many smartphones passed quality inspection?</p>
+        <ul class="answers">
+            <li><label><input type="radio" name="q1" value="A"> A) 21,375</label></li>
+            <li><label><input type="radio" name="q1" value="B"> B) 22,500</label></li>
+            <li><label><input type="radio" name="q1" value="C"> C) 23,000</label></li>
+            <li><label><input type="radio" name="q1" value="D"> D) 24,000</label></li>
+            <li><label><input type="radio" name="q1" value="E"> E) 23,500</label></li>
+        </ul>
+        <p id="feedback1" class="feedback"></p>
+        <p id="solution1" class="solution"></p>
+    </div>
+
+    <div class="question">
+        <p>2. If the number of tablets increased by 20% while keeping the total production fixed at 50,000 units, which category would need to decrease most logically to accommodate the increase (assuming proportional reduction across other categories)?</p>
+        <ul class="answers">
+            <li><label><input type="radio" name="q2" value="A"> A) Smartphones</label></li>
+            <li><label><input type="radio" name="q2" value="B"> B) Laptops</label></li>
+            <li><label><input type="radio" name="q2" value="C"> C) Wearable devices</label></li>
+            <li><label><input type="radio" name="q2" value="D"> D) Prototypes</label></li>
+            <li><label><input type="radio" name="q2" value="E"> E) All equally</label></li>
+        </ul>
+        <p id="feedback2" class="feedback"></p>
+        <p id="solution2" class="solution"></p>
+    </div>
+
+    <div class="question">
+        <p>3. After removing the rejected smartphones and laptops, how many total units passed inspection?</p>
+        <ul class="answers">
+            <li><label><input type="radio" name="q3" value="A"> A) 48,650</label></li>
+            <li><label><input type="radio" name="q3" value="B"> B) 46,800</label></li>
+            <li><label><input type="radio" name="q3" value="C"> C) 45,000</label></li>
+            <li><label><input type="radio" name="q3" value="D"> D) 30,000</label></li>
+            <li><label><input type="radio" name="q3" value="E"> E) 20,000</label></li>
+        </ul>
+        <p id="feedback3" class="feedback"></p>
+        <p id="solution3" class="solution"></p>
+    </div>
+
+    <div class="question">
+        <p>4. What fraction of the total production does the smallest share represent?</p>
+        <ul class="answers">
+            <li><label><input type="radio" name="q4" value="A"> A) 1/10</label></li>
+            <li><label><input type="radio" name="q4" value="B"> B) 1/20</label></li>
+            <li><label><input type="radio" name="q4" value="C"> C) 3/20</label></li>
+            <li><label><input type="radio" name="q4" value="D"> D) 1/4</label></li>
+            <li><label><input type="radio" name="q4" value="E"> E) 9/20</label></li>
+        </ul>
+        <p id="feedback4" class="feedback"></p>
+        <p id="solution4" class="solution"></p>
+    </div>
+
+    <div class="question">
+        <p>5. What is the total number of units produced if wearable devices and prototypes are combined into a single category?</p>
+        <ul class="answers">
+            <li><label><input type="radio" name="q5" value="A"> A) 12,500</label></li>
+            <li><label><input type="radio" name="q5" value="B"> B) 15,000</label></li>
+            <li><label><input type="radio" name="q5" value="C"> C) 6,000</label></li>
+            <li><label><input type="radio" name="q5" value="D"> D) 7,500</label></li>
+            <li><label><input type="radio" name="q5" value="E"> E) 10,000</label></li>
+        </ul>
+        <p id="feedback5" class="feedback"></p>
+        <p id="solution5" class="solution"></p>
+    </div>
+
+    <button type="button" class="submit-btn" onclick="checkAnswers()">Submit</button>
+</form>
+
+<div class="score-section" id="score-section"></div>
+</div>
+
+<div class="social-link">
+  <p>Follow us on <a href="https://www.facebook.com/cselearningessentials/" target="_blank" rel="noopener noreferrer">Facebook</a> for more updates!</p>
+  <p>Subscribe to our YouTube Channel <a href="https://www.youtube.com/@cselearningessentialsph2023" target="_blank" rel="noopener noreferrer">here</a> for more content!</p>
+</div>
+
+<div class="advertisement">
+  <img src="images/advertisement.png" alt="Civil Service E-book" style="width: 100%; max-width: 400px; display: block; margin: 0 auto 15px auto; border-radius: 5px;">
+  <p>Avail our latest Civil Service Exam Reviewer E-book. Direct message us for more details!</p>
+</div>
+
+<script>
+function checkAnswers() {
+    const correctAnswers = {
+        q1: 'A',
+        q2: 'A',
+        q3: 'A',
+        q4: 'B',
+        q5: 'D'
+    };
+
+    const solutions = {
+        q1: 'Smartphones: 45%×50,000=22,500 → rejected: 5%×22,500=1,125 → passed: 22,500−1,125=21,375.',
+        q2: 'Tablets increase by 20%, smartphones (largest share) would logically be reduced to accommodate.',
+        q3: 'Rejected: smartphones: 1,125; laptops: 3%×7,500=225 → total rejected=1,350 → passed: 50,000−1,350=48,650.',
+        q4: 'Prototypes: 5%=5/100=1/20.',
+        q5: 'Wearable (10%)+Prototypes(5%)=15%×50,000=7,500.'
+    };
+
+    let score = 0;
+
+    for (let i = 1; i <= 5; i++) {
+        const answer = document.querySelector(`input[name="q${i}"]:checked`);
+        const feedback = document.getElementById(`feedback${i}`);
+        const solution = document.getElementById(`solution${i}`);
+        if (answer) {
+            if (answer.value === correctAnswers[`q${i}`]) {
+                feedback.textContent = 'Correct!';
+                feedback.classList.add('correct');
+                feedback.classList.remove('incorrect');
+                score++;
+            } else {
+                feedback.textContent = `Incorrect. The correct answer is ${correctAnswers[`q${i}`]}.`;
+                feedback.classList.add('incorrect');
+                feedback.classList.remove('correct');
+            }
+        } else {
+            feedback.textContent = 'No answer selected.';
+            feedback.classList.remove('correct', 'incorrect');
+        }
+        solution.textContent = `Solution: ${solutions[`q${i}`]}`;
+    }
+
+    const result = score >= 4 ? 'You Passed!' : 'You Failed.';
+    document.getElementById('score-section').textContent = `Your score is ${score}/5. ${result}`;
+}
+</script>
+
+</body>
+</html>
